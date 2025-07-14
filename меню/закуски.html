@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Закуски</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fff8f0, #f0f0ff);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #000;
+    }
+
+    a.back {
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .search-bar input {
+      padding: 12px;
+      width: 80%;
+      max-width: 400px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      transition: border-color 0.3s;
+    }
+
+    .search-bar input:focus {
+      border-color: #f06;
+      outline: none;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border: 2px solid #ccc;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #f06;
+      box-shadow: 0 6px 16px rgba(240, 102, 102, 0.2);
+      transform: translateY(-4px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      margin: 10px 0 8px;
+      font-size: 18px;
+      color: #444;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Закуски</h1>
+</header>
+
+<a class="back" href="index.html">← Бас бетке қайту</a>
+
+<div class="search-bar">
+  <input id="menuSearch" type="text" placeholder="Тағам атауын іздеңіз...">
+</div>
+
+<section>
+  <div class="card">
+    <img src="images/квашенная.jpg" alt="квашенная">
+    <h3>квашенная</h3>
+    <p>1000тг</p>
+  </div>
+  <div class="card">
+    <img src="images/запеченная-тыква-с-апельсинами.jpg" alt="запеченная тыква с апельсинами">
+    <h3>запеченная тыква с апельсинами</h3>
+    <p>2000тг</p>
+  </div>
+  <div class="card">
+    <img src="images/кабачковые-роллы.jpg" alt="кабачковые роллы">
+    <h3>кабачковые роллы</h3>
+    <p>2000тг</p>
+  </div>
+  <div class="card">
+    <img src="images/кавказское-ассорти.jpg" alt="кавказское ассорти">
+    <h3>кавказское ассорти</h3>
+    <p>4000тг</p>
+  </div>
+  <div class="card">
+    <img src="images/котлет.jpg" alt="котлет">
+    <h3>котлет</h3>
+    <p>400тг</p>
+  </div>
+  <div class="card">
+    <img src="images/котлеты-с-огурцами.jpg" alt="котлеты с огурцами">
+    <h3>котлеты с огурцами</h3>
+    <p>1500тг</p>
+  </div>
+  <div class="card">
+    <img src="images/куриное-ассорти.jpg" alt="куриное ассорти">
+    <h3>куриное ассорти</h3>
+    <p>5000тг</p>
+  </div>
+  <div class="card">
+    <img src="images/лимон.jpg" alt="лимон">
+    <h3>лимон</h3>
+    <p>300тг</p>
+  </div>
+  <div class="card">
+    <img src="images/мясное-ассорти.jpg" alt="мясное ассорти">
+    <h3>мясное ассорти</h3>
+    <p>8000тг</p>
+  </div>
+  <div class="card">
+    <img src="images/овощное-ассорти.jpg" alt="овощное ассорти">
+    <h3>овощное ассорти</h3>
+    <p>3000тг</p>
+  </div>
+  <div class="card">
+    <img src="images/огурцы-соленное.jpg" alt="огурцы соленное">
+    <h3>огурцы соленное</h3>
+    <p>200тг</p>
+  </div>
+  <div class="card">
+    <img src="images/русское-соленье.jpg" alt="русское соленье">
+    <h3>русское соленье</h3>
+    <p>1500тг</p>
+  </div>
+  <div class="card">
+    <img src="images/селедка-по-русский.jpg" alt="селедка по русский">
+    <h3>селедка по русский</h3>
+    <p>2500тг</p>
+  </div>
+  <div class="card">
+    <img src="images/стручковый-перец.jpg" alt="стручковый перец">
+    <h3>стручковый перец</h3>
+    <p>200тг</p>
+  </div>
+  <div class="card">
+    <img src="images/тещин-язык.jpg" alt="тещин язык">
+    <h3>тещин язык</h3>
+    <p>1500тг</p>
+  </div>
+  <div class="card">
+    <img src="images/фаршированный-ассорти.jpg" alt="фаршированный ассорти">
+    <h3>фаршированный ассорти</h3>
+    <p>4000тг</p>
+  </div>
+</section>
+
+<script>
+  document.getElementById('menuSearch').addEventListener('input', function() {
+    let filter = this.value.toLowerCase();
+    document.querySelectorAll('.card').forEach(function(card) {
+      let text = card.innerText.toLowerCase();
+      card.style.display = text.includes(filter) ? 'block' : 'none';
+    });
+  });
+</script>
+
+</body>
+</html>

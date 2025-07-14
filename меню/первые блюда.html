@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Первые блюда</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fff8f0, #f0f0ff);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #000;
+    }
+
+    a.back {
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .search-bar input {
+      padding: 12px;
+      width: 80%;
+      max-width: 400px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      transition: border-color 0.3s;
+    }
+
+    .search-bar input:focus {
+      border-color: #f06;
+      outline: none;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border: 2px solid #ccc;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #f06;
+      box-shadow: 0 6px 16px rgba(240, 102, 102, 0.2);
+      transform: translateY(-4px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      margin: 10px 0 8px;
+      font-size: 18px;
+      color: #444;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Первые блюда</h1>
+</header>
+
+<a class="back" href="index.html">← Бас бетке қайту</a>
+
+<div class="search-bar">
+  <input id="menuSearch" type="text" placeholder="Тағам атауын іздеңіз...">
+</div>
+
+<section>
+  <div class="card"><img src="images/бодене-сорпа.jpg" alt="Бодене сорпа"><h3>Бодене сорпа</h3><p>1300тг</p></div>
+  <div class="card"><img src="images/борщ.jpg" alt="борщ"><h3>борщ</h3><p>800тг</p></div>
+  <div class="card"><img src="images/голубцы.jpg" alt="голубцы"><h3>голубцы</h3><p>1200тг</p></div>
+  <div class="card"><img src="images/нарын.jpg" alt="Нарын"><h3>Нарын</h3><p>1300тг</p></div>
+  <div class="card"><img src="images/домашний-лагман.jpg" alt="Домашний Лагман"><h3>Домашний Лагман</h3><p>1300тг</p></div>
+  <div class="card"><img src="images/куриная-лапша.jpg" alt="Куриная лапша"><h3>Куриная лапша</h3><p>800тг</p></div>
+  <div class="card"><img src="images/кукси.jpg" alt="Кукси"><h3>Кукси</h3><p>1200тг</p></div>
+  <div class="card"><img src="images/пельмени.jpg" alt="Пельмени"><h3>Пельмени</h3><p>1000тг</p></div>
+  <div class="card"><img src="images/рамен-с-говядиной.jpg" alt="Рамен с говядиной"><h3>Рамен с говядиной</h3><p>1650тг</p></div>
+  <div class="card"><img src="images/рамен-с-курицей.jpg" alt="Рамен с курицей"><h3>Рамен с курицей</h3><p>1400тг</p></div>
+  <div class="card"><img src="images/солянка.jpg" alt="солянка"><h3>солянка</h3><p>1200тг</p></div>
+  <div class="card"><img src="images/сырный-суп.jpg" alt="Сырный суп"><h3>Сырный суп</h3><p>1000тг</p></div>
+  <div class="card"><img src="images/тефтели.jpg" alt="тефтели"><h3>тефтели</h3><p>800тг</p></div>
+  <div class="card"><img src="images/шурпа-говяжий.jpg" alt="Шурпа говяжий"><h3>Шурпа говяжий</h3><p>1300тг</p></div>
+</section>
+
+<script>
+  document.getElementById('menuSearch').addEventListener('input', function() {
+    let filter = this.value.toLowerCase();
+    document.querySelectorAll('.card').forEach(function(card) {
+      let text = card.innerText.toLowerCase();
+      card.style.display = text.includes(filter) ? 'block' : 'none';
+    });
+  });
+</script>
+
+</body>
+</html>

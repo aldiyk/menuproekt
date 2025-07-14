@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Астау Манты</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fff8f0, #f0f0ff);
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 24px;
+      padding: 30px;
+      border: 2px solid #ccc;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: fadeIn 0.6s ease;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .dish-image {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #f06;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 15px;
+      text-decoration: none;
+      color: #888;
+    }
+
+    .back:hover {
+      color: #f06;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Астау Манты</h1>
+    <img class="dish-image" src="images/астау-манты.jpg" alt="Астау Манты" />
+
+    <div class="description">
+      <b>Қазақша:</b> Қолмен жасалған үлкен манты, астауға әдемі түрде қойылып, дәмдеуіштермен безендіріліп беріледі. Тойымды әрі мейрамға лайық тағам.<br><br>
+      <b>Русский:</b> Ручной лепки сочные манты, красиво выложенные в астау, подаются с ароматными специями. Отличный выбор для большого стола.
+    </div>
+
+    <div class="price">10.000 тг</div>
+    <a class="back" href="../блюда на заказ.html">← Бас бетке қайту</a>
+  </div>
+</body>
+</html>
